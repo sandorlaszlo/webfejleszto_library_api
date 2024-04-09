@@ -1,28 +1,35 @@
 {
     "client": "Thunder Client",
     "collectionName": "webfejleszto_library_api",
-    "dateExported": "2024-04-09T14:53:57.904Z",
+    "dateExported": "2024-04-09T15:51:22.925Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "296a1ee3-6fba-4e14-9d13-e2567f3eb425",
+            "_id": "f84ecef6-8982-4f47-b148-fe4919399a10",
             "name": "Category",
             "containerId": "",
-            "created": "2024-04-09T13:47:50.469Z",
+            "created": "2024-04-09T14:54:58.642Z",
             "sortNum": 10000
+        },
+        {
+            "_id": "8655fa3a-79d6-430b-8ffa-d8474e4011c8",
+            "name": "Book",
+            "containerId": "",
+            "created": "2024-04-09T15:21:59.010Z",
+            "sortNum": 20000
         }
     ],
     "requests": [
         {
-            "_id": "5346f969-9f3d-4c72-bb91-10e7c79849f4",
-            "colId": "a94916cc-7be5-4dce-b97a-e7ab45e0ad02",
-            "containerId": "296a1ee3-6fba-4e14-9d13-e2567f3eb425",
+            "_id": "9dff8edb-9c03-4182-bf51-6e25826e3ed2",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "f84ecef6-8982-4f47-b148-fe4919399a10",
             "name": "Get all",
             "url": "http://127.0.0.1:8000/api/categories",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2024-04-09T13:48:08.244Z",
-            "modified": "2024-04-09T13:50:19.791Z",
+            "created": "2024-04-09T14:54:58.642Z",
+            "modified": "2024-04-09T14:54:58.642Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -42,15 +49,43 @@
             "tests": []
         },
         {
-            "_id": "cf4b7614-db06-4725-9df5-fc4667faddf8",
-            "colId": "a94916cc-7be5-4dce-b97a-e7ab45e0ad02",
-            "containerId": "296a1ee3-6fba-4e14-9d13-e2567f3eb425",
+            "_id": "4039f2ab-29ab-48ae-8d01-ef3409b16b6c",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "8655fa3a-79d6-430b-8ffa-d8474e4011c8",
+            "name": "Get all",
+            "url": "http://127.0.0.1:8000/api/books",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-09T15:21:59.010Z",
+            "modified": "2024-04-09T15:22:14.353Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e19d577d-346c-4d55-a717-125a19fcdf3e",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "f84ecef6-8982-4f47-b148-fe4919399a10",
             "name": "Create",
             "url": "http://127.0.0.1:8000/api/categories",
             "method": "POST",
             "sortNum": 15000,
-            "created": "2024-04-09T14:15:48.961Z",
-            "modified": "2024-04-09T14:33:32.618Z",
+            "created": "2024-04-09T14:54:58.644Z",
+            "modified": "2024-04-09T14:54:58.644Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -75,15 +110,48 @@
             "tests": []
         },
         {
-            "_id": "401b3d56-5e5c-4e96-9c4e-d975e5a56c1e",
-            "colId": "a94916cc-7be5-4dce-b97a-e7ab45e0ad02",
-            "containerId": "296a1ee3-6fba-4e14-9d13-e2567f3eb425",
+            "_id": "55093268-869d-476b-8a2e-ccc347658993",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "8655fa3a-79d6-430b-8ffa-d8474e4011c8",
+            "name": "Create",
+            "url": "http://127.0.0.1:8000/api/books",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-04-09T15:21:59.011Z",
+            "modified": "2024-04-09T15:41:43.060Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"My new book\",\n  \"ISBN\" : \"1234567890123\",\n  \"year\" : 2024,\n  \"pages\" : 123,\n  \"category_id\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4adb7ae-9456-4776-a79a-a86450ed913e",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "f84ecef6-8982-4f47-b148-fe4919399a10",
             "name": "Update",
             "url": "http://127.0.0.1:8000/api/categories/1",
             "method": "PATCH",
             "sortNum": 17500,
-            "created": "2024-04-09T14:39:15.079Z",
-            "modified": "2024-04-09T14:40:26.513Z",
+            "created": "2024-04-09T14:54:58.646Z",
+            "modified": "2024-04-09T14:54:58.646Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -108,15 +176,48 @@
             "tests": []
         },
         {
-            "_id": "9eabb540-a393-46ff-b496-85864372e34f",
-            "colId": "a94916cc-7be5-4dce-b97a-e7ab45e0ad02",
-            "containerId": "296a1ee3-6fba-4e14-9d13-e2567f3eb425",
+            "_id": "a90d81b8-466c-41dc-ac8d-b919ceadf7c9",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "8655fa3a-79d6-430b-8ffa-d8474e4011c8",
+            "name": "Update",
+            "url": "http://127.0.0.1:8000/api/books/1",
+            "method": "PATCH",
+            "sortNum": 17500,
+            "created": "2024-04-09T15:21:59.012Z",
+            "modified": "2024-04-09T15:50:04.885Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"updated title\",\n  \"ISBN\" : \"1234567890123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e70778c8-d8d0-4add-ab39-b3d17aea282e",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "f84ecef6-8982-4f47-b148-fe4919399a10",
             "name": "Get one",
             "url": "http://127.0.0.1:8000/api/categories/10",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-04-09T14:05:29.495Z",
-            "modified": "2024-04-09T14:10:52.171Z",
+            "created": "2024-04-09T14:54:58.643Z",
+            "modified": "2024-04-09T14:54:58.643Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -136,15 +237,71 @@
             "tests": []
         },
         {
-            "_id": "f93f5796-b7f7-4c01-8f0a-92c04e5ef07d",
-            "colId": "a94916cc-7be5-4dce-b97a-e7ab45e0ad02",
-            "containerId": "296a1ee3-6fba-4e14-9d13-e2567f3eb425",
+            "_id": "8ac828bb-6446-4018-9765-2af858d20777",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "8655fa3a-79d6-430b-8ffa-d8474e4011c8",
+            "name": "Get one",
+            "url": "http://127.0.0.1:8000/api/books/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-09T15:21:59.013Z",
+            "modified": "2024-04-09T15:50:44.592Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6dc00604-3da5-4cf5-b9cc-afba642f83d0",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "f84ecef6-8982-4f47-b148-fe4919399a10",
             "name": "Delete",
             "url": "http://127.0.0.1:8000/api/categories/10",
             "method": "DELETE",
             "sortNum": 30000,
-            "created": "2024-04-09T14:35:53.844Z",
-            "modified": "2024-04-09T14:36:11.783Z",
+            "created": "2024-04-09T14:54:58.645Z",
+            "modified": "2024-04-09T14:54:58.645Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6d172c43-37b4-4419-9b96-cdeaf965ec6b",
+            "colId": "4e642068-b12e-4b50-962f-34d69ee81bfa",
+            "containerId": "8655fa3a-79d6-430b-8ffa-d8474e4011c8",
+            "name": "Delete",
+            "url": "http://127.0.0.1:8000/api/books/10",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-04-09T15:21:59.014Z",
+            "modified": "2024-04-09T15:49:13.844Z",
             "headers": [
                 {
                     "name": "Accept",
